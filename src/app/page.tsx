@@ -60,7 +60,7 @@ export default function LoginPage() {
       localStorage.setItem("userName", user.displayName || "User");
       router.push("/home");
     } catch (err: any) {
-      setError("Email or password is incorrect");
+      setError("Email or password is incorrect!");
     } finally {
       setLoading(false);
     }
